@@ -29,7 +29,15 @@ class Program
         }
 
         int sum = numberList.Sum();
-        float avg = numberList.Count > 0 ? (float)sum / numberList.Count : 0f;
+        float avg;
+        if (numberList.Count > 0)
+        {
+            avg = (float)sum / numberList.Count;
+        }
+        else
+        {
+            avg = 0f;
+        }
         Console.WriteLine($"Sum: {sum}");
         Console.WriteLine($"Average: {avg}");
     }
