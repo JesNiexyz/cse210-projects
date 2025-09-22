@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        //Randomly generates a number between 1-100
         Random randomnumber = new Random();
         int magicNumber = randomnumber.Next(1,101);
 
