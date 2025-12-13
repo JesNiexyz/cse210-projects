@@ -5,12 +5,38 @@ public class Ingredient
     private string _category;
     private double _caloriesPerUnit;
 
+    public Ingredient() { }
+
     public Ingredient(string name, Measurement measurement, string category, double caloriesPerUnit)
     {
         _name = name;
         _measurement = measurement;
         _category = category;
         _caloriesPerUnit = caloriesPerUnit;
+    }
+
+    public string Name
+    {
+        get => _name;
+        set => _name = value;
+    }
+
+    public Measurement MeasurementData
+    {
+        get => _measurement;
+        set => _measurement = value;
+    }
+
+    public string Category
+    {
+        get => _category;
+        set => _category = value;
+    }
+
+    public double caloriesPerUnit
+    {
+        get => _caloriesPerUnit;
+        set => _caloriesPerUnit = value;
     }
 
     public string GetName() => _name;
