@@ -1,0 +1,1 @@
+This is a meal plan manager where you can generate a shopping list based on saved and loaded recipes. You can also make a meal plan for the week. Shopping list can be generated from past recipes. All recipes and meal plan will generate nutritional info based on the calorie intake inputted.
